@@ -1,8 +1,8 @@
 # Compressed NFT (cNFT) Minting Script
 
 Images
-![ss1]("./src/Screenshot 2024-09-29 at 16.18.41.png")
-![ss2]("./src/Screenshot 2024-09-29 at 16.18.50.png")
+![ss1](./src/Screenshot 2024-09-29 at 16.18.41.png)
+![ss2](./src/Screenshot 2024-09-29 at 16.18.50.png)
 
 [Devet]("https://explorer.solana.com/address/6fEXLrZ2jn9QcUQeZ3Ted3HyRhv2xo6PNCdMDzbgqUuF?cluster=devnet")
 To install dependencies:
