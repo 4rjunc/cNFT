@@ -1,44 +1,27 @@
 {
   "name": "arjun",
-  "symbol": "AC",
   "description": "zero to something in solana",
-  "seller_fee_basis_points": 0,
-  "image": "https://pbs.twimg.com/profile_images/1837114156777889793/UZAq8VY4_400x400.jpg",
-  "external_url": "https://x.com/4rjunc",
+  "image": "https://jbtvvzbsryxfzsfvkyia.supabase.co/storage/v1/object/public/solanamob/thorfin.png",
   "attributes": [
     {
-      "trait_type": "Program",
-      "value": "Solana Summer Fellowship"
-    },
-    {
-      "trait_type": "X",
+      "trait_type": "Twitter",
       "value": "https://x.com/4rjunc"
     },
     {
-      "trait_type": "Github",
-      "value": "https://gitub.com/4rjunc"
+      "trait_type": "GitHub",
+      "value": "https://github.com/4rjunc"
     },
     {
-      "trait_type": "Linkedin"
+      "trait_type": "LinkedIn",
       "value": "https://www.linkedin.com/in/arjun-mundamani"
+    },
+    {
+      "trait_type": "Discord",
+      "value": "4rjunc"
+    },
+    {
+      "trait_type": "Telegram",
+      "value": "rjunc"
     }
-  ],
-  "collection": {
-    "name": "arjun cNFTs Collection",
-    "family": "ayush cNFTs"
-  },
-  "properties": {
-    "files": [
-      {
-        "uri": "https://pbs.twimg.com/profile_images/1837114156777889793/UZAq8VY4_400x400.jpg",
-        "type": "image/png"
-      }
-    ],
-    "category": "image"
-  },
-  "creators": {
-    "address": "7yxySxVMxgwMJ3TMBboPfAqZmkDvuMzBLQQ39GeFQUks",
-    "verified": false,
-    "share": 100
-  }
+  ]
 }
