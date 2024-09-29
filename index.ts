@@ -1,12 +1,10 @@
 import { createUmi } from "@metaplex-foundation/umi-bundle-defaults";
 import {
   type Umi,
-  createGenericFile,
   generateSigner,
   keypairIdentity,
   percentAmount,
   publicKey,
-  sol,
 } from "@metaplex-foundation/umi";
 import {
   mplTokenMetadata,
@@ -17,13 +15,8 @@ import { irysUploader } from "@metaplex-foundation/umi-uploader-irys";
 
 import {
   createTree,
-  findLeafAssetIdPda,
-  getAssetWithProof,
   mintV1,
   mplBubblegum,
-  parseLeafFromMintV1Transaction,
-  verifyCollection,
-  mintToCollectionV1,
 } from "@metaplex-foundation/mpl-bubblegum";
 
 const endpoint = "https://api.devnet.solana.com";
