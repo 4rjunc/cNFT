@@ -1,0 +1,22 @@
+{
+  "name": "arjun",
+  "symbol": "AC",
+  "description": "zero to something in solana",
+  "seller_fee_basis_points": 0,
+  "image": "https://pbs.twimg.com/profile_images/1837114156777889793/UZAq8VY4_400x400.jpg",
+  "external_url": "https://x.com/4rjunc",
+  "attributes": [],
+  "collection": {
+    "name": "arjun cNFTs Collection",
+    "family": "arjun cNFTs"
+  },
+  "properties": {
+    "files": [
+      {
+        "uri": "https://pbs.twimg.com/profile_images/1837114156777889793/UZAq8VY4_400x400.jpg",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}

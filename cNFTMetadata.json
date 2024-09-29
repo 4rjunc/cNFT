@@ -1,0 +1,44 @@
+{
+  "name": "arjun",
+  "symbol": "AC",
+  "description": "zero to something in solana",
+  "seller_fee_basis_points": 0,
+  "image": "https://pbs.twimg.com/profile_images/1837114156777889793/UZAq8VY4_400x400.jpg",
+  "external_url": "https://x.com/4rjunc",
+  "attributes": [
+    {
+      "trait_type": "Program",
+      "value": "Solana Summer Fellowship"
+    },
+    {
+      "trait_type": "X",
+      "value": "https://x.com/4rjunc"
+    },
+    {
+      "trait_type": "Github",
+      "value": "https://gitub.com/4rjunc"
+    },
+    {
+      "trait_type": "Linkedin"
+      "value": "https://www.linkedin.com/in/arjun-mundamani"
+    }
+  ],
+  "collection": {
+    "name": "arjun cNFTs Collection",
+    "family": "ayush cNFTs"
+  },
+  "properties": {
+    "files": [
+      {
+        "uri": "https://pbs.twimg.com/profile_images/1837114156777889793/UZAq8VY4_400x400.jpg",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  },
+  "creators": {
+    "address": "6X4G9p5kiE6tDXkBHfpqispJ2B6YfAA3tBGcKvaXaht2",
+    "verified": false,
+    "share": 100
+  }
+}
