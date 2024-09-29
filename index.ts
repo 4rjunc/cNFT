@@ -27,12 +27,13 @@ import {
 } from "@metaplex-foundation/mpl-bubblegum";
 import { symbolName } from "typescript";
 
-const endpoint = "https://api.devnet.solana.com";
+//const endpoint = "https://api.devnet.solana.com";
+const endpoint = "https://api.mainnet-beta.solana.com";
 
 const mintCNFT = async () => {
   const fellowAddresses = [
     "7yxySxVMxgwMJ3TMBboPfAqZmkDvuMzBLQQ39GeFQUks",
-    "6X4G9p5kiE6tDXkBHfpqispJ2B6YfAA3tBGcKvaXaht2",
+    //"6X4G9p5kiE6tDXkBHfpqispJ2B6YfAA3tBGcKvaXaht2",
   ];
 
   //SETTING UP UMI
@@ -47,6 +48,7 @@ const mintCNFT = async () => {
 
   //READ WALLET
   const wallet = await Bun.file("my-keypair.json").text();
+  //const secretKey = new Uint8Array(JSON.parse(wallet));
   const secretKey = new Uint8Array(JSON.parse(wallet));
   console.log(`☘️  Secret Key: ${secretKey}`);
   let keypair = umi.eddsa.createKeypairFromSecretKey(secretKey);
@@ -90,8 +92,9 @@ const mintCNFT = async () => {
   };
 
   console.log("UPLOADING COLLECTION METADATA");
-  const collectionMetadataUri =
-    await umi.uploader.uploadJson(collectionMetadata);
+  const collectionMetadataUri = await umi.uploader.uploadJson(
+    "https://github.com/4rjunc/cNFT/blob/main/collectionMetadata.json",
+  );
   console.log("CREATING COLLECTION NFT");
   await createNft(umi, {
     mint: collectionID,
@@ -131,7 +134,7 @@ const mintCNFT = async () => {
       collectionMint: collectionID.publicKey,
       metadata: {
         name: "4rjunc",
-        uri: nftMetadataUri, // Either use `nftMetadataUri` or a previously uploaded uri.
+        uri: "https://github.com/4rjunc/cNFT/blob/main/cNFTMetadata.json", // Either use `nftMetadataUri` or a previously uploaded uri.""
         sellerFeeBasisPoints: 500, // 5%
         collection: { key: collectionID.publicKey, verified: false },
         creators: [
