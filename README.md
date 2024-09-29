@@ -1,32 +1,16 @@
 # Compressed NFT (cNFT) Minting Script
 
-Images
-![ss1]("https://github.com/4rjunc/cNFT/blob/main/src/Screenshot%202024-09-29%20at%2016.18.41.png?raw=true")
-![ss2]("https://github.com/4rjunc/cNFT/blob/main/src/Screenshot%202024-09-29%20at%2016.18.50.png?raw=true")
+## Images
 
-[Devet]("https://explorer.solana.com/address/6fEXLrZ2jn9QcUQeZ3Ted3HyRhv2xo6PNCdMDzbgqUuF?cluster=devnet")
-To install dependencies:
+![Screenshot 1](https://github.com/4rjunc/cNFT/blob/main/src/Screenshot%202024-09-29%20at%2016.18.41.png?raw=true)
 
-```bash
-bun install
-```
+![Screenshot 2](https://github.com/4rjunc/cNFT/blob/main/src/Screenshot%202024-09-29%20at%2016.18.50.png?raw=true)
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This script demonstrates how to create and mint Compressed NFTs (cNFTs) on the Solana blockchain using the Metaplex Foundation's UMI library and associated modules.
+[View on Solana Explorer (Devnet)](https://explorer.solana.com/address/6fEXLrZ2jn9QcUQeZ3Ted3HyRhv2xo6PNCdMDzbgqUuF?cluster=devnet)
 
 ## Overview
 
-The script performs the following main tasks:
-
-1. Sets up the UMI (Unified Modular Interface) with necessary plugins
-2. Creates a Merkle tree for storing compressed NFTs
-3. Creates a collection NFT
-4. Mints compressed NFTs to multiple recipient addresses
+This script demonstrates how to create and mint Compressed NFTs (cNFTs) on the Solana blockchain using the Metaplex Foundation's UMI library and associated modules.
 
 ## Prerequisites
 
@@ -46,8 +30,13 @@ The script uses the following main dependencies:
 
 ## Setup
 
-1. Install the required dependencies.
-2. Ensure you have a Solana wallet keypair file named `my-keypair.json` in the same directory as the script.
+To install dependencies:
+
+```bash
+bun install
+```
+
+Ensure you have a Solana wallet keypair file named `my-keypair.json` in the same directory as the script.
 
 ## Configuration
 
@@ -68,10 +57,10 @@ This is the main function that orchestrates the entire minting process:
 
 ## Usage
 
-Run the script using Node.js or Bun:
+Run the script using Bun:
 
-```
-bun run <script-name>.ts
+```bash
+bun run index.ts
 ```
 
 ## Important Notes
@@ -101,10 +90,8 @@ If you encounter issues:
 - Ensure all dependencies are correctly installed.
 - Check that your wallet has sufficient SOL.
 - Verify that the `my-keypair.json` file is in the correct location and format.
-- If transactions fail, you may need to adjust the delay between mints or handle rate limiting more robustly.
-  Blogs Refered
+- If transactions fail, you may need to adjust the delay between mints or handle rate limiting more robustly.1. The most detailed blog on Solana's compression: https://www.helius.dev/blog/all-you-need-to-know-about-compression-on-solana
 
-1. The most detailed blog on Solana's compression: https://www.helius.dev/blog/all-you-need-to-know-about-compression-on-solana
 2. All about specifically NFT compression (cNFTS): https://www.helius.dev/blog/solana-nft-compression
 3. Metaplex's Bubblegum program's docs: https://developers.metaplex.com/bubblegum
 4. Merkle Tress: https://www.helius.dev/blog/cryptographic-tools-101-hash-functions-and-merkle-trees-explained#what’s-a-merkle-tree
